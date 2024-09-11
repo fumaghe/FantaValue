@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #15212a;
+    font-family: "League Spartan", sans-serif;
+}
+
+.contrail-one-font {
+    font-family: "Contrail One", sans-serif;
+}
+
+/* --------------- LAYOUT ---------------------- */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-66 {
+    width: calc(100% / 3 * 2);
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.col-25 {
+    width: 25%;
+}
+
+/* ------------------ UTILITIES ----------------------- */
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.list-unstyled {
+    list-style-type: none;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-orange {
+    color: #fe4c10 !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-orange {
+    background-color: #fe4c10 !important;
+}
+
+.bg-black {
+    background-color: #15212a;
+}
+
+.bg-light-gray {
+    background-color: #f2f2f2;
+}
+
+.my-10 {
+    margin: 10px 0px;
+}
+
+.my-20 {
+    margin: 20px 0px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #e9e9e9;
+}
+
+.border-top {
+    border-top: 2px solid #b1b1b1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.border-right {
+    border-right: 1px solid #b1b1b1;
+}
+
+.border-0 {
+    border: none;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.fs-xs {
+    font-size: var(--font-size-xs);
+}
+
+.fs-s {
+    font-size: var(--font-size-s);
+}
+
+.fs-m {
+    font-size: var(--font-size-m);
+}
+
+.fs-l {
+    font-size: var(--font-size-l);
+}
+
+.fs-xl {
+    font-size: var(--font-size-xl);
+}
+
+.fs-xxl {
+    font-size: var(--font-size-xxl);
+}
+
+:root {
+    /* Font-size per mobile (default) */
+    --font-size-xs: 14px;
+    --font-size-s: 18px;
+    --font-size-m: 20px;
+    --font-size-l: 24px;
+    --font-size-xl: 32px;
+    --font-size-xxl: 40px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.postion-relative {
+    position: relative;
+}
+
+/* ---------------------- MEDIA QUERIES ----------------------------------- */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    :root {
+        /* Font-size per mobile (default) */
+        --font-size-xs: 16px;
+        --font-size-s: 20px;
+        --font-size-m: 22px;
+        --font-size-l: 26px;
+        --font-size-xl: 34px;
+        --font-size-xxl: 42px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    :root {
+        /* Font-size per mobile (default) */
+        --font-size-xs: 18px;
+        --font-size-s: 22px;
+        --font-size-m: 24px;
+        --font-size-l: 28px;
+        --font-size-xl: 36px;
+        --font-size-xxl: 44px;
+    }
+}
